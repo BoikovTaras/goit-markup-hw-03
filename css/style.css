@@ -1,0 +1,241 @@
+/* Палитра:
+        основной цвет текста    #757575
+        доп цвет текста         #212121
+        цвет акцента            #2196F3
+        вспомагательный цвет    #FFFFFF
+        цвеи ссылок             #FFFFFF 60 % 
+   шрифты:
+        Roboto 400, 500, 700
+        Raleway 700
+*/
+
+/* =========== Основные стили =========== */
+:root {
+  --main-color: #757575;
+  --akcent-color: #2196f3;
+  --title-color: #212121;
+  --background-color: #ffffff;
+  --font-roboto: 'Roboto', sans-serif;
+  --font-raleway: 'Raleway', sans-serif;
+}
+body {
+  color: var(--main-color);
+  background-color: var(--background-color);
+  font-family: var(--font-roboto);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* =========== End Основные стили =========== */
+
+/* =========== Шапка Сайта =========== */
+.main-header {
+}
+
+.logo {
+  font-family: var(--font-raleway);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.logo-akcent {
+  color: var(--akcent-color);
+}
+.main-header-items {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+
+.main-header-items {
+  color: var(--title-color);
+}
+.main-header-items:hover,
+.main-header-items:focus {
+  color: var(--akcent-color);
+}
+.main-header-contacts {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.main-header-contacts-item {
+  color: var(--main-color);
+}
+.main-header-contacts-item:hover,
+.main-header-contacts-item:focus {
+  color: var(--akcent-color);
+}
+/* =========== End Шапка Сайта =========== */
+/* ===========  Секция Hero =========== */
+.baner {
+  background: #2f303a;
+}
+.hero {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--background-color);
+}
+
+.hero-button {
+  color: var(--background-color);
+  background: var(--akcent-color);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--background-color);
+  background: #188ce8;
+  cursor: pointer;
+}
+/* ===========  End Секция Hero =========== */
+
+/* ===========  Секция особенности =========== */
+.company-profile {
+}
+.company-profile-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+.company-profile-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+/* ===========  End Секция особенности =========== */
+/* ===========  Секция занятий =========== */
+.presintation-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+/* ===========  End Секция занятий =========== */
+/* ===========  Секция команда =========== */
+.team-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.team-list-item-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.team-list-item-paragraf {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* ===========  End Секция команда =========== */
+/* ===========  Секция футер =========== */
+.footer {
+  background: #2f303a;
+}
+.footer-logo {
+  font-family: var(--font-raleway);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03e;
+  color: var(--background-color);
+}
+.footer-address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--background-color);
+}
+.footer-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--akcent-color);
+}
+/* ===========  End Секция футер =========== */
+/* ================== ПОРТФОЛИО =================== */
+/* ================== Навигация =================== */
+.portfolio-navigation-button {
+  font-family: var(--font-roboto);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  background: #f5f4fa;
+}
+.portfolio-navigation-button:hover,
+.portfolio-navigation-button:focus {
+  color: var(--background-color);
+  background: var(--akcent-color);
+  cursor: pointer;
+}
+/* ================== End Навигация =================== */
+/* ================== Проэкты =================== */
+.projects-list-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+.projects-list-paragraf {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+/* ================== End Проэкты =================== */
