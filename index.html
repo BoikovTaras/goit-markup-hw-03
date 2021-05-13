@@ -16,24 +16,31 @@
     <body>
             <!-- Шапка сайта -->
         <header class="main-header">
-            <nav class="main-header-nanigation">
-                <a href="./index.html" class="logo link list"><span class="logo-akcent">Web</span>Studio</a>
-                <ul class="main-header-list">
-                    <li class="list"><a class="main-header-items link" href="">Студия</a></li>
-                    <li class="list"><a class="main-header-items link" href="./portfolio.html">Портфолио</a></li>
-                    <li class="list"><a class="main-header-items link" href="">Контакты</a></li>
+            <div class="main-conteiner container">
+                <nav class="main-header-nanigation">
+                    <a href="./index.html" class="logo link list"><span class="logo-akcent">Web</span>Studio</a>
+                    <ul class="main-header-list">
+                        <li class="main-conteiner-list list"><a class="main-header-items link" href="./index.html">Студия</a></li>
+                        <li class="main-conteiner-list list"><a class="main-header-items link" href="./portfolio.html">Портфолио</a></li>
+                        <li class="main-conteiner-list list"><a class="main-header-items link" href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="main-header-contacts">
+                    <li class="main-conteiner-contacts list"><a class="main-header-contacts-item link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="main-conteiner-contacts list"><a class="main-header-contacts-item link" href="tel:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
-            </nav>
-            <ul class="main-header-contacts">
-                <li class="list"><a class="main-header-contacts-item link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="list"><a class="main-header-contacts-item link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
+            </div>
         </header>
         <main>
         <!-- Банер -->
             <section class="baner">
-                <h1 class="hero">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="hero-button">Заказать услугу</button>
+                <div class="container main-conteiner-hero">
+                    <h1 class="hero">Эффективные решения <br> для вашего бизнеса</h1>
+                    <button type="button" class="hero-button">Заказать услугу</button>
+                </div>
+
+                
             </section>
             <!-- Блок особенностей -->
             <section>

@@ -53,14 +53,31 @@ ol {
 img {
   display: block;
 }
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 
 /* =========== End Основные стили =========== */
 
 /* =========== Шапка Сайта =========== */
 .main-header {
+  padding: 24px 0;
+}
+
+.main-conteiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header-nanigation {
+  display: flex;
 }
 
 .logo {
+  display: block;
   font-family: var(--font-raleway);
   font-style: normal;
   font-weight: bold;
@@ -68,11 +85,21 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  margin-top: -8px;
+  margin-bottom: -7px;
 }
+
 .logo-akcent {
   color: var(--akcent-color);
 }
+
+.main-header-list {
+  display: flex;
+  margin-left: 93px;
+}
+
 .main-header-items {
+  align-items: center;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -81,13 +108,23 @@ img {
   color: var(--title-color);
 }
 
+.main-conteiner-list:not(:last-child) {
+  margin-right: 50px;
+}
+
+.main-header-contacts {
+  display: flex;
+}
+
 .main-header-items {
   color: var(--title-color);
 }
+
 .main-header-items:hover,
 .main-header-items:focus {
   color: var(--akcent-color);
 }
+
 .main-header-contacts {
   font-style: normal;
   font-weight: 500;
@@ -95,18 +132,32 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
 .main-header-contacts-item {
   color: var(--main-color);
 }
+
 .main-header-contacts-item:hover,
 .main-header-contacts-item:focus {
   color: var(--akcent-color);
 }
+
+.main-conteiner-contacts:not(:last-child) {
+  margin-right: 50px;
+}
+
 /* =========== End Шапка Сайта =========== */
 /* ===========  Секция Hero =========== */
 .baner {
   background: #2f303a;
 }
+.main-conteiner-hero {
+  display: flex;
+  flex-direction: column;
+  padding: 200px 0;
+  align-items: center;
+}
+
 .hero {
   font-style: normal;
   font-weight: 900;
@@ -115,12 +166,16 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
   color: var(--background-color);
 }
 
 .hero-button {
   color: var(--background-color);
   background: var(--akcent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
 }
 
 .hero-button:hover,
