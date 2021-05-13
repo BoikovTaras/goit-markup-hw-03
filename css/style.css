@@ -187,16 +187,28 @@ img {
 /* ===========  End Секция Hero =========== */
 
 /* ===========  Секция особенности =========== */
-.company-profile {
+.company {
+  padding-top: 93px;
 }
+
+.company-profile {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -30px;
+}
+.company-profile-list {
+  margin-left: 30px;
+}
+
 .company-profile-title {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-color);
+  margin-bottom: 10px;
 }
 .company-profile-text {
   font-style: normal;
