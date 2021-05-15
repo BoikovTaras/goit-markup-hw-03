@@ -58,6 +58,12 @@ img {
   padding: 0 15px;
   margin: 0 auto;
 }
+.section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 /* =========== End Основные стили =========== */
 
@@ -72,7 +78,8 @@ img {
   align-items: center;
 }
 
-.main-header-nanigation {
+.main-header-nanigation,
+.main-header-contacts {
   display: flex;
 }
 
@@ -108,16 +115,8 @@ img {
   color: var(--title-color);
 }
 
-.main-conteiner-list:not(:last-child) {
-  margin-right: 50px;
-}
-
-.main-header-contacts {
-  display: flex;
-}
-
-.main-header-items {
-  color: var(--title-color);
+.main-conteiner-list:not(:first-child) {
+  margin-left: 50px;
 }
 
 .main-header-items:hover,
@@ -145,8 +144,8 @@ img {
   color: var(--akcent-color);
 }
 
-.main-conteiner-contacts:not(:last-child) {
-  margin-right: 50px;
+.main-conteiner-contacts:not(:first-child) {
+  margin-left: 50px;
 }
 
 /* =========== End Шапка Сайта =========== */
@@ -190,13 +189,10 @@ img {
 /* ===========  End Секция Hero =========== */
 
 /* ===========  Секция особенности =========== */
-.company {
-  padding-top: 93px;
-}
 
 .company-profile {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-left: -30px;
 }
 .company-profile-list {
@@ -211,7 +207,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-color);
-  margin-bottom: 10px;
 }
 .company-profile-text {
   font-style: normal;
@@ -219,10 +214,12 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-top: 10px;
 }
 /* ===========  End Секция особенности =========== */
 /* ===========  Секция занятий =========== */
 .presintation-title {
+  margin-top: 94px;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -231,28 +228,29 @@ img {
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
-.presintation-container {
-  display: flex;
-  flex-direction: column;
-  padding: 94px 0;
-}
 .presintation-list-container {
   display: flex;
   margin-left: -30px;
 }
 .presentation-item {
+  flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
-  padding-top: 50px;
+  margin-top: 50px;
 }
 /* ===========  End Секция занятий =========== */
 /* ===========  Секция команда =========== */
 .team {
   background-color: #f5f4fa;
 }
-.team-title-container {
-  display: flex;
-  flex-direction: column;
-  padding: 94px 0;
+.team-title {
+  margin-bottom: 50px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
 }
 .team-list {
   display: flex;
@@ -269,18 +267,9 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-title {
-  margin-bottom: 50px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
-}
+
 .team-list-item-title {
-  padding-top: 30px;
+  margin-top: 30px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -290,7 +279,7 @@ img {
   color: var(--title-color);
 }
 .team-list-item-paragraf {
-  padding-top: 10px;
+  margin-top: 10px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -316,7 +305,7 @@ img {
   color: var(--background-color);
 }
 .footer-address {
-  padding-top: 20px;
+  margin-top: 20px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -348,11 +337,6 @@ img {
 .line {
   margin: 0;
   border: 1px solid #ececec;
-}
-.portfolio-container {
-  display: flex;
-  flex-direction: column;
-  padding: 94px 0;
 }
 /* ================== Навигация =================== */
 .portfolio-navigation-list {
@@ -401,6 +385,7 @@ img {
   padding: 20px 24px;
   background: #ffffff;
   border: 1px solid #eeeeee;
+  border-top: none;
   box-sizing: border-box;
 }
 .projects-list-title {
