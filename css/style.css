@@ -61,8 +61,6 @@ img {
 .section {
   display: flex;
   flex-direction: column;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 /* =========== End Основные стили =========== */
@@ -70,6 +68,7 @@ img {
 /* =========== Шапка Сайта =========== */
 .main-header {
   padding: 24px 0;
+  border-bottom: 1px solid #ececec;
 }
 
 .main-conteiner {
@@ -92,8 +91,6 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--title-color);
-  margin-top: -8px;
-  margin-bottom: -7px;
 }
 
 .logo-akcent {
@@ -103,6 +100,7 @@ img {
 .main-header-list {
   display: flex;
   margin-left: 93px;
+  align-items: center;
 }
 
 .main-header-items {
@@ -122,9 +120,6 @@ img {
 .main-header-items:hover,
 .main-header-items:focus {
   color: var(--akcent-color);
-}
-.main-header-items:active {
-  color: #2196f3;
 }
 
 .main-header-contacts {
@@ -152,11 +147,11 @@ img {
 /* ===========  Секция Hero =========== */
 .baner {
   background: #2f303a;
+  padding: 200px 0;
 }
 .main-conteiner-hero {
   display: flex;
   flex-direction: column;
-  padding: 200px 0;
   align-items: center;
 }
 
@@ -189,6 +184,9 @@ img {
 /* ===========  End Секция Hero =========== */
 
 /* ===========  Секция особенности =========== */
+.company {
+  padding-top: 94px;
+}
 
 .company-profile {
   display: flex;
@@ -218,8 +216,12 @@ img {
 }
 /* ===========  End Секция особенности =========== */
 /* ===========  Секция занятий =========== */
+.presentation {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .presintation-title {
-  margin-top: 94px;
+  margin-bottom: 50px;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -230,17 +232,20 @@ img {
 }
 .presintation-list-container {
   display: flex;
+  margin-top: -30px;
   margin-left: -30px;
 }
 .presentation-item {
   flex-basis: calc((100% - 90px) / 3);
+  margin-top: 30px;
   margin-left: 30px;
-  margin-top: 50px;
 }
 /* ===========  End Секция занятий =========== */
 /* ===========  Секция команда =========== */
 .team {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .team-title {
   margin-bottom: 50px;
@@ -291,9 +296,8 @@ img {
 /* ===========  Секция футер =========== */
 .footer {
   background: #2f303a;
-}
-.footer-container {
-  padding: 60px 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .footer-logo {
   font-family: var(--font-raleway);
@@ -314,11 +318,10 @@ img {
   color: var(--background-color);
 }
 .footer-links {
-  display: flex;
-  flex-direction: column;
+  display: block;
 }
 .footer-list {
-  padding-top: 9px;
+  margin-top: 9px;
 }
 .footer-link {
   font-style: normal;
@@ -334,11 +337,11 @@ img {
 }
 /* ===========  End Секция футер =========== */
 /* ================== ПОРТФОЛИО =================== */
-.line {
-  margin: 0;
-  border: 1px solid #ececec;
-}
 /* ================== Навигация =================== */
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .portfolio-navigation-list {
   display: flex;
   justify-content: center;
