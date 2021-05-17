@@ -296,8 +296,8 @@ img {
 /* ===========  Секция футер =========== */
 .footer {
   background: #2f303a;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-logo {
   font-family: var(--font-raleway);
@@ -345,7 +345,7 @@ img {
 .portfolio-navigation-list {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .portfolio-navigation-items:not(:first-child) {
   margin-left: 8px;
